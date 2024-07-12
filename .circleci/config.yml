@@ -10,19 +10,19 @@ parameters:
     default: "twrp-12.1"
   device_tree: # Device tree URL
     type: string
-    default: "https://github.com/cd-Crypton/custom_recovery_tree_realme_nashc"
+    default: "https://github.com/LostOuija/Stylo6"
   device_branch: # Device tree branch
     type: string
-    default: "android-staging"
+    default: "master"
   device_name: # Device name
     type: string
-    default: "nashc"
+    default: "mdh50lm"
   device_path: # Device path
     type: string
-    default: "device/realme/nashc"
+    default: "device/lge/mdh50lm"
   device_makefile: # Device makefile: twrp or omni + _devicename
     type: string
-    default: "twrp_nashc"
+    default: "twrp_mdh50lm"
   build_target: # Build target: boot, recovery, vendorboot
     type: string
     default: "recovery"
