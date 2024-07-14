@@ -131,4 +131,4 @@ jobs:
 workflows:
   build:
     jobs:
-      - recovery 
+      - recovery
