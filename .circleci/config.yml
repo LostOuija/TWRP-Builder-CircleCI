@@ -10,7 +10,7 @@ parameters:
     default: "twrp-12.1"
   device_tree: # Device tree URL
     type: string
-    default: "https://github.com/LostOuija/mdh50lm.git"
+    default: "https://github.com/LostOuija/android_device_lge_mdh50lm.git"
   device_branch: # Device tree branch
     type: string
     default: "main"
