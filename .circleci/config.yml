@@ -10,7 +10,7 @@ parameters:
     default: "twrp-12.1"
   device_tree: # Device tree URL
     type: string
-    default: "https://github.com/LostOuija/android_device_lge_mdh50lm.git"
+    default: "https://github.com/LostOuija/stylo.git"
   device_branch: # Device tree branch
     type: string
     default: "main"
@@ -22,7 +22,7 @@ parameters:
     default: "device/lge/mdh50lm"
   device_makefile: # Device makefile: twrp or omni + _devicename
     type: string
-    default: "twrp_mdh50lm"
+    default: "omni_mdh50lm"
   build_target: # Build target: boot, recovery, vendorboot
     type: string
     default: "recovery"
@@ -91,8 +91,8 @@ jobs:
                 name: Sync Manifest
                 command: |
                   mkdir -p ~/android/recovery && cd ~/android/recovery
-                  git config --global user.name "Carlo Dandan"
-                  git config --global user.email "carlodandan.personal@proton.me"
+                  git config --global user.name "LostOuija"
+                  git config --global user.email "jayloveskymmi@gmail.com"
                   repo init --depth=1 -u ${MANIFEST} -b ${MANIFEST_BRANCH}
                   repo sync -j$(nproc --all) --force-sync
                   echo "Done syncing manifest source."
