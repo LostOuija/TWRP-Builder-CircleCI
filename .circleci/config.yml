@@ -22,10 +22,10 @@ parameters:
     default: "device/lge/mdh50lm"
   device_makefile: # Device makefile: twrp or omni + _devicename
     type: string
-    default: "lineage_mdh50lm"
+    default: "twrp_mdh50lm"
   build_target: # Build target: boot, recovery, vendorboot
     type: string
-    default: "recovery"
+    default: "boot"
 
 jobs:
   recovery:
